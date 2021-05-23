@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Hackathon</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+}
+
+imgseven{
+  width: 100%;
+  height: 30vw;
+}
+
+.listings{
+  background: url("image/seven.png");
+  width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+
+}
+
+.listi{
+  display: block;
+  margin-left: 10%;
+  margin-right:0;
+}
+
+#oneth,#twoth,#threeth{
+  margin-left: 7%;
+  margin-top: 3%;
+}
+
+@media (min-width: 1707px) {
+#oneth{
+  margin-left: 12%;
+}
+}
+
+@media (max-width: 547px) {
+  .imgseven{
+    width: auto;
+    height: auto;
+  }
+
+  .containered{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .listings{
+    background: url("image/seven.png");
+    width: 100%;
+    height: 210vw;
+    background-attachment: fixed;
+    position: relative;
+
+  }
+  .listi{
+    display: block;
+
+
+  }
+
+  #oneth,#twoth,#threeth{
+    position:absolute;
+margin-left: 25%;
+
+  }
+
+#twoth{
+  margin-top: 70%;
+}
+#threeth{
+  margin-top: 140%;
+}
+
+  .widhei{
+    width: 200px;
+    height: auto;
+margin-left: 25%;
+  }
+
+}
+
+
+.rowins {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnins {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.columnins img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columnins {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnins {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .containered{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+.bodies {
+background-color: #2c0000;
+font-family: "Inter", sans-serif;
+}
+
+/* ul {
+list-style: none;
+margin: 0 !important;
+} */
+
+/* a {
+text-decoration: none !important;
+display: inline-block;
+} */
+
+/* img {
+max-width: 100%;
+} */
+
+/* button:focus {
+outline: none;
+} */
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+color: ;
+margin: 0;
+}
+/* p {
+font-size: 14px;
+line-height: 26px;
+margin: 0;
+} */
+.containering {
+width: 100%;
+max-width: 1140px;
+padding: 0 15px;
+box-sizing: border-box;
+margin: 0 auto;
+}
+.timeliness h2 {
+text-align: center;
+color: #fff;
+font-weight: 600;
+margin-bottom: 40px;
+font-size: 32px;
+}
+.d-flex-2 {
+display: flex;
+align-items: center;
+}
+.timeline-area {
+padding: 80px 0;
+}
+.all-timelines {
+position: relative;
+}
+.timeliness h2 {
+text-align: center;
+color: #fff;
+font-weight: 600;
+margin-bottom: 40px;
+}
+.all-timelines::before {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+height: 100%;
+width: 2px;
+background: #efa22f;
+top: 20px;
+}
+.single-timeline {
+margin-bottom: 22px;
+}
+.timeline-blank {
+width: 50%;
+}
+.timeline-text {
+width: 50%;
+padding-left: 30px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+position: relative;
+}
+.timeline-text h6 {
+color: #f0f1f2;
+font-weight: 900;
+display: inline-block;
+font-size: 1rem;
+}
+.timeline-text span {
+color: #f0f1f2;
+display: block;
+width: 100%;
+}
+.single-timeline:nth-child(even) .timeline-text span {
+text-align: right;
+}
+.t-square {
+content: "";
+position: absolute;
+width: 12px;
+height: 12px;
+left: -6px;
+background: #efa22f;
+}
+.single-timeline:nth-child(even) {
+-webkit-box-orient: horizontal;
+-webkit-box-direction: reverse;
+-ms-flex-direction: row-reverse;
+flex-direction: row-reverse;
+}
+.single-timeline:nth-child(even) .t-square {
+right: -6px;
+left: unset;
+}
+.single-timeline:nth-child(even) .timeline-text {
+padding-left: 0;
+padding-right: 30px;
+text-align: right;
+}
+
+@media all and (max-width: 991px) {
+}
+@media all and (max-width: 768px) {
+.all-timelines::before {
+  right: unset;
+  top: 0;
+}
+.single-timeline:nth-child(2n) .timeline-text {
+  padding-left: 30px;
+  padding-right: 0;
+  text-align: left;
+}
+.single-timeline:nth-child(2n) .t-square {
+  left: -6px;
+  right: unset;
+}
+.timeline-blank {
+  display: none;
+}
+.timeline-text {
+  width: 100%;
+}
+.single-timeline:nth-child(even) .timeline-text span {
+  text-align: left !important;
+}
+}
+@media all and (max-width: 575px) {
+
+
+}
+@media all and (max-width: 360px) {
+.all-timelines::before {
+  top: 32px;
+}
+
+
+
+
+}
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.imgt {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.containered {
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-right-radius:15px;
+
+}
+
+.themes{
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlidest{
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursored {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.preved,
+.nexted {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nexted {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.preved:hover,
+.nexted:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.rowed:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.columned {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demoed {
+  opacity: 0.6;
+}
+
+.active,
+.demoed:hover {
+  opacity: 1;
+}
+
+@media (max-width: 690px) {
+  .containered  {
+    position: relative;
+    margin-left: 0%;
+    margin-right:0%;
+  }
+}
+</style>
+
+<body>
+
+  <div class="scroll-up-btn">
+    <a href="tel:9042313135">    <i class="fas fa-phone"></i></a>
+    </div>
+
+<div class="loader-container">
+  <div class="loader">
+
+  </div>
+</div>
+  <nav class="navbar1">
+    <div class="max-width">
+      <div class="logo">
+        <a href="#"> <img class="logoimg" src="image/HAT-Horizontal-01.png" alt=""> </a>
+      </div>
+      <div class="menu">
+        <ul><a class="men" href="#home">Home</a></ul>
+        <ul><a class="men" href="#about">About</a></ul>
+        <ul><a class="men" href="#services">Tracks</a></ul>
+        <ul><a class="men" href="#social">Contact</a></ul>
+<ul><a href="participants.html"><button id="redbutton" class="btn btn-success" type="button" name="button">Register</button></a></ul>
+
+      </div>
+      <div class="menu-btn">
+
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- <nav class="navbar1">
+        <div class="max-width">
+            <div class="logo"><a href="#"> <img class="logoimg" src="image/HAT-Horizontal-01.png" alt=""> </a></div>
+            <ul class="menu">
+                <ul><a href="#home" class="menu-btn">Home</a></ul>
+                <ul><a href="#about" class="menu-btn">About</a></ul>
+                <ul><a href="#services" class="menu-btn">Services</a></ul>
+                <ul><a href="#skills" class="menu-btn">Skills</a></ul>
+                <ul><a href="#teams" class="menu-btn">Teams</a></ul>
+                <ul><a href="#contact" class="menu-btn">Contact</a></ul>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav> -->
+
+  <section class="home" id="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-2">Wish To do something Productive?</div>
+
+        <div class="text-2">Tired of this Lockdown?</div>
+        <div class="text-1"></div>
+<div class="text-2">Bored of being at Home?</div>
+        <div class="text-3"> Here comes <span class="typing"> HAT </span> to your home. </div>
+        <a href="participants.html" ><div class="countdown">
+  Register
+        </div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">Unleash Your Child's creativity</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img  src="image/Image-1.png" alt="">
+        </div>
+      <div class="  right">
+        <!-- <div class="text">
+          ARE YOU READY TO  UNLEASH YOUR CHILD’S
+ <span> CREATIVITY?</span>
+        </div> -->
+        <p>
+
+          Imagine what if you can do this at your home.
+          Steamtroops has brought your imagination to reality with its signature event, <span class="redd">  HAT ( Home- A-Thon)</span>
+
+</p>
+<p>A virtual HAT is a platform aimed at <span class="redd"> school students,</span>  where they can apply <span class="redd"> their super brains</span>  to come up with a practical solution for real-world problems.
+</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section  class="eight" >
+  <!-- <div class="container-seventh"> -->
+  <!-- <img class="seventh-img-1" width="0" height="0"  src="images/Asset-301.png" alt="">
+  <img class="seventh-img-2" width="0" height="0"  src="images/Asset-101.png" alt="">
+  <img class="seventh-img-3" width="0" height="0"  src="images/Achievements01.png" alt="">
+  <h3 class="seventh-10">10+</h3>
+  <h3 class="seventh-100">100+</h3>
+  <h3 class="seventh-1000">1000+</h3>
+  <h3 class="seventh-schools">Schools</h3>
+  <h3 class="seventh-countries">Countries</h3>
+  <h3 class="seventh-projects">Hands-On Projects</h3>
+  <h1 id="image-ass-3" class="seventh-h1"><img class="seventh-img" width="120" height="110"  src="images/Asset-301.png" alt=""> <p id="numbers-1" >10+</p>  Countries</h1>
+  <h1 id="image-ass-1" class="seventh-h1"><img class="seventh-img" width="150" height="130"  src="images/Asset-101.png" alt=""> <p id="numbers-2" >100+</p> Schools</h1>
+  <h1 id="image-ass-2" class="seventh-h1"><img class="seventh-img" width="150" height="150"  src="images/Achievements01.png" alt=""> <p id="numbers-3">1000+</p>  Hands-On Projects</h1> -->
+<h1 class="h1s" >"Not every child possesses the same skills. <br> Each one has their unique inner super powers."</h1>
+  <!-- <div class="color-overlay">
+
+  </div> -->
+  <!-- </div> -->
+  </section>
+
+
+<!-- <section class="quote">
+  <div class="container">
+  <img class="imageq" src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%;">
+
+  <div class="centered">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididu"</div>
+</div>
+
+</section> -->
+
+<section class="about" id="about">
+  <div class="max-width">
+    <h2 class="title">Confused on how to provide skills to your kid(s)</h2>
+    <div class="about-content">
+      <div class="column left">
+        <img src="image/Image-2.jpg" alt="">
+      </div>
+    <div class="  right">
+
+      <p>HAT is a key to unlock your <span class="redd">  children's hidden talents.</span> It helps improve your child's creativity, innovation, design thinking, and problem-solving ability. It also imparts the much needed 21st-century skills.
+
+.</p>
+<p>Practically <span class="redd">experiencing a concept</span>  is an effective way of learning as it tests first and briefs the lesson next. HAT aims at <span class="redd"> knowledge along with the action.</span>
+ </p>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="services" id="services">
+  <div class="max-width">
+    <h2 id="tracks" class="title">Our Tracks</h2>
+    <div class="serv-content">
+      <div class="card">
+        <div class="box">
+          <i>  <img src="image/Jr-HAT.png" ></i>
+
+
+          <div class="text"><h1 class="jrsr">HAT JUNIORS</h1></div>
+          <h4 class="jr-sr">Age group:  &nbsp;<span>7 to 10 years</span></h4>
+          <p class="t1">Virtual hands-on event for the ages group 8 to 10, which paves the way  for play-way  learning  and brings your child to light   as a   problem  solver. </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+    <i>  <img src="image/Sr-HAT.png" alt=""></i>
+          <div class="text"><h1 class="jrsr">HAT SENIORS</h1></div>
+                  <h4 class="jr-sr">Age group:  &nbsp; <span>11 to 14 years</span></h4>
+          <p class="t1">virtual hands-on event for the age group 11 to 14, where students can interact with their innovative minds to come out with a creative solution for real-world problems.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- <div class="b-example-divider"></div>
+
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="volunteer.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold lh-1 mb-3">Volunteer</h1>
+      <p class="Participants">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-danger btn-lg px-4 me-md-2">Primary</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class="b-example-divider"></div>
+
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+  <div class="row align-items-center g-5 py-5">
+    <div class="col-lg-7 text-center text-lg-start">
+      <h1 class="display-4 fw-bold lh-1 mb-3">Participants</h1>
+      <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+      <br>
+      <img src="volunteer.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+
+    </div>
+
+    <div class="col-10 mx-auto col-lg-5">
+      <form class="p-5 border rounded-3 bg-light" action="/payment">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="date" class="form-control" id="date" name="date" id="date" name="date" placeholder="Date Of Birth">
+          <label for="floatingInput">Date Of Birth</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Std</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Contact Number</label>
+        </div>
+
+        <button class="w-100 btn btn-lg btn-danger" type="submit">Proceed</button>
+        <hr class="my-4">
+        <small class="text-muted">By clicking Proceed, you agree to the terms of use.</small>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="b-example-divider"></div>
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="volunteer.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold lh-1 mb-3">School</h1>
+      <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-danger btn-lg px-4 me-md-2">Primary</button>
+
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+<!-- <section class="timelines" id="timeline">
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">30<sup>th</sup></span>
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">26<sup>th</sup></span>
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">26<sup>th</sup></span>
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">26<sup>th</sup></span>
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+  <article>
+    <div class="inner">
+      <span class="date">
+        <span class="day">26<sup>th</sup></span>
+        <span class="month">Jan</span>
+        <span class="year">2014</span>
+      </span>
+      <h2>The Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+    </div>
+  </article>
+</section> -->
+
+
+
+
+
+
+<!-- <section class="section">
+  <h2 class="title" id="time">Time Line</h2>
+  <div class="ct1">
+
+    <div class="box">
+      <div class="container-3">
+  </i></span>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="rightbox">
+      <div class="rb-container">
+        <ul class="rb">
+          <li class="rb-item" ng-repeat="itembx">
+            <div class="timestamp">
+              3rd May 2020<br> 7:00 PM
+            </div>
+            <div class="item-title">Chris Serrano posted a photo on your wall.</div>
+
+          </li>
+          <li class="rb-item" id="item1" ng-repeat="itembx">
+            <div class="timestamp">
+              19th May 2020<br> 3:00 PM
+            </div>
+            <div class="item-title">Redwood commented on your last post.</div>
+
+          </li>
+          <li class="rb-item" ng-repeat="itembx">
+            <div class="timestamp">
+              19th May 2020<br> 3:00 PM
+            </div>
+            <div class="item-title">Redwood commented on your last post.</div>
+
+          </li>
+
+          <li class="rb-item"  id="item2" ng-repeat="itembx">
+            <div class="timestamp">
+              17st June 2020<br> 7:00 PM
+            </div>
+            <div class="item-title">Lucas McAlister just send you a message.</div>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+</section> -->
+  <div class="services" id="timelining">
+<section class="bodies">
+
+
+
+  <h2 class="title" id="lines">Timeline</h2>
+
+<div class="timeline-area">
+<div class="containering">
+
+  <div class="all-timelines">
+    <!--SINGLE TIMELINE-->
+    <div class="single-timeline d-flex-2">
+      <div class="timeline-blank"></div>
+      <div class="timeline-text d-flex-2">
+        <span>
+          <h6 class="h6"  style="color:crimson; font-size: 30px">Day 1</h6> <i> <b class="thead" style="font-size: 25px">— self introduction</b> </i>
+        <div class="t-square"></div>
+      </div>
+    </div>
+    <!--SINGLE TIMELINE-->
+    <div class="single-timeline d-flex-2">
+      <div class="timeline-blank"></div>
+      <div class="timeline-text d-flex-2">
+        <span>
+          <h6 class="h6" style="color:crimson; font-size: 30px">Day 2</h6>— <i> <b class="thead" style="font-size: 25px" >replica challenge</b> </i>  <br>
+<p class="thead" style="font-size: 20px">Participants will be replicating the challenges that will be posted on youtube channel a week ahead of the competition.</p>
+
+        </span>
+        <div class="t-square"></div>
+      </div>
+    </div>
+    <!--SINGLE TIMELINE-->
+    <div class="single-timeline d-flex-2">
+      <div class="timeline-blank"></div>
+      <div class="timeline-text d-flex-2">
+        <span>
+          <h6 class="h6" style="color:crimson; font-size: 30px">Day 3</h6> — <i> <b class="thead" style="font-size: 25px"> replica challenge(live ) </b> </i> <br>
+<p class="thead" style="font-size: 20px">Participants will be given challenges on the spot and will be performing it on live</p>
+
+        </span>
+        <div class="t-square"></div>
+      </div>
+    </div>
+    <!--SINGLE TIMELINE-->
+    <div class="single-timeline d-flex-2">
+      <div class="timeline-blank"></div>
+      <div class="timeline-text d-flex-2">
+        <span>
+          <h6 class="h6" style="color:crimson; font-size: 30px">Day 4</h6> — <i> <b class="thead" style="font-size: 25px">design thinking challenges</b> </i>  <br>
+<p class="thead" style="font-size: 20px">Participants will be designing their own product based upon the problem statements given to them .</p>
+
+        </span>
+        <div class="t-square"></div>
+      </div>
+    </div>
+    <!--SINGLE TIMELINE-->
+    <div class="single-timeline d-flex-2">
+      <div class="timeline-blank"></div>
+      <div class="timeline-text d-flex-2">
+        <span>
+          <h6 class="h6" style="color:crimson; font-size: 30px">Day 5</h6> <i> <b class="thead" style="font-size: 25px">— catechize - 1</b> </i> <br>
+<p class="thead" style="font-size: 20px"> A competitive quiz challenge, Phase - I will be conducted</p>
+
+        </span>
+        <div class="t-square"></div>
+      </div>
+    </div>
+    <!--SINGLE TIMELINE-->
+    <div class="single-timeline d-flex-2">
+      <div class="timeline-blank"></div>
+      <div class="timeline-text d-flex-2">
+        <span>
+            <h6 class="h6" style="color:crimson; font-size: 30px" >Day 6</h6> <i> <b class="thead" style="font-size: 25px"> — catechize -2</b> </i> <br>
+  <p class="thead" style="font-size: 20px">A competitive quiz challenge, Phase - II will be conducted</p>
+
+          </span>
+        <div class="t-square"></div>
+      </div>
+    </div>
+    <!--SINGLE TIMELINE-->
+    <div class="single-timeline d-flex-2">
+      <div class="timeline-blank"></div>
+      <div class="timeline-text d-flex-2">
+        <span>
+          <h6  class="h6" style="color:crimson; font-size: 30px">Day 7</h6> <i> <b class="thead" style="font-size: 25px" >— valedictory</b> </i>
+
+        </span>
+        <div class="t-square"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+  </div>
+
+<section class="services" id="services">
+  <div class="max-width">
+    <h2 class="title" id="regis">
+Registration
+</h2>
+    <div class="serv-content">
+
+      <div class="b-example-divider"></div>
+
+<div class="border">
+
+
+
+        <div id="sch" class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-justify rounded-3  shadow-lg">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img id="participating"  src="image/School.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1  class="display-5 fw-bold lh-1 mb-3 forms">School</h1>
+            <p  class="lead">Let’s bring life to learning and  start up  right now  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="#">    <button  type="button" class="btn btn-danger btn-lg px-4 me-md-2" id="tooltip">Register </button></a>
+<!-- <span class="tooltiptext">Let’s bring life to learning</span> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+
+
+      <div class="b-example-divider"></div>
+
+        <div id="par"  class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img id="participating" src="image/Participants.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div id="seco" class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3 forms">Participants</h1>
+            <p id="particpantsp" class="lead">Let’s mute our outer world for a while and listen to our kid’s inner superpowers. &nbsp; &nbsp; &nbsp; &nbsp &nbsp;</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+  <a href="participants.html">           <button type="button" class="btn btn-danger btn-lg px-4 me-md-2" id="tooltip1" >I Participate</button></a>
+  <!-- <span class="tooltiptext">Let’s mute our outer world for a while and listen to our kid’s inner superpowers</span> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+
+
+      <div class="b-example-divider"></div>
+
+        <div id="vol" class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3  shadow-lg">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img id="volunteering" src="image/Volunteers.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3 forms">Volunteer</h1>
+            <p id="volunteerp" class="lead">We believe that every human mind feels pleasure in doing good to another. &nbsp; &nbsp; &nbsp; &nbsp &nbsp; &nbsp; &nbsp; &nbsp; </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="volunteer.html">    <button type="button" class="btn btn-danger btn-lg px-4 me-md-2" id="tooltip2">I volunteer</button></a>
+          <!-- <span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipisicing eli laboris </span> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Flickity HTML init -->
+<!-- <div class="carousel carousel-main" data-flickity>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+</div>
+
+<div class="carousel carousel-nav"
+  data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+</div> -->
+
+
+<div class="backk">
+
+
+<div class="maxwidth">
+
+
+
+<section class="themes">
+
+<h2 id="testi" class="title">Testimonials</h2>
+
+
+<div class="containered">
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/6.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/7.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/8.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/9.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/10.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/11.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlidest">
+
+    <img class="imgt" src="slide-images/12.jpg" style="width:100%">
+  </div>
+
+  <a class="preved" onclick="plusSlides(-1)">❮</a>
+  <a class="nexted" onclick="plusSlides(1)">❯</a>
+
+
+
+  <div class="rowed">
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/1.jpg" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/7.jpg" style="width:100%" onclick="currentSlide(7)">
+    </div>
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/8.jpg" style="width:100%" onclick="currentSlide(8)">
+    </div>
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/9.jpg" style="width:100%" onclick="currentSlide(9)">
+    </div>
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/10.jpg" style="width:100%" onclick="currentSlide(10)">
+    </div>
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/11.jpg" style="width:100%" onclick="currentSlide(11)">
+    </div>
+    <div class="columned">
+      <img class="demoed cursored imgt" src="slide-images/12.jpg" style="width:100%" onclick="currentSlide(12)">
+    </div>
+  </div>
+</div>
+
+</section>
+
+</div>
+
+</div>
+
+
+<!-- <section class="seventh" data-aos="zoom-in" data-aos-duration="0" data-aos-once="true">
+<div class="container-seventh">
+<img class="seventh-img-1" width="0" height="0"  src="images/Asset-301.png" alt="">
+<img class="seventh-img-2" width="0" height="0"  src="images/Asset-101.png" alt="">
+<img class="seventh-img-3" width="0" height="0"  src="images/Achievements01.png" alt=""> -->
+<!-- <h3 class="seventh-10">10+</h3>
+<h3 class="seventh-100">100+</h3>
+<h3 class="seventh-1000">1000+</h3>
+<h3 class="seventh-schools">Schools</h3>
+<h3 class="seventh-countries">Countries</h3>
+<h3 class="seventh-projects">Hands-On Projects</h3> -->
+<!-- <div class="imgs">
+
+
+<img class="seventh-img seventh-h1" width="250" height="auto"  src="image/CashAwards.png" alt="">
+<img class="seventh-img seventh-h1" width="250" height="auto"  src="image/Entries.png" alt="">
+<img class="seventh-img seventh-h1" width="250" height="auto"  src="image/Schools.png" alt="">
+</div> -->
+<!-- <div class="color-overlay">
+
+</div> -->
+<!-- </div>
+</section>
+
+<div class="mof">
+
+
+<section class="seventh" data-aos="zoom-in" data-aos-duration="0" data-aos-once="true">
+<div class="container-seventh">
+<img class="seventh-img-1" width="0" height="0"  src="images/Asset-301.png" alt="">
+<img class="seventh-img-2" width="0" height="0"  src="images/Asset-101.png" alt=""> -->
+<!-- <img class="seventh-img-3" width="0" height="0"  src="images/Achievements01.png" alt=""> -->
+<!-- <h3 class="seventh-10">10+</h3>
+<h3 class="seventh-100">100+</h3>
+<h3 class="seventh-1000">1000+</h3>
+<h3 class="seventh-schools">Schools</h3>
+<h3 class="seventh-countries">Countries</h3>
+<h3 class="seventh-projects">Hands-On Projects</h3> -->
+<!-- <div class="imgs"> -->
+
+
+<!-- <img class="seventh-img seventh-h1" width="250" height="auto"  src="image/CashAwards.png" alt="">
+<img class="seventh-img seventh-h1" width="250" height="auto"  src="image/Entries.png" alt="">
+<img class="seventh-img seventh-h1" width="250" height="auto"  src="image/Schools.png" alt="">
+</div> -->
+<!-- <div class="color-overlay">
+
+</div> -->
+<!-- </div>
+</section>
+</div> -->
+
+<!--  -->
+
+
+
+<!-- <section class="service" id="ser">
+    <h2 class="title">Testimonials</h2>
+
+ <div class="rowins">
+   <div class="columnins">
+     <img src="image/1.jpg" style="width:100%">
+     <img src="image/2.jpg" style="width:100%">
+     <img src="image/3.jpg" style="width:100%">
+     <img src="image/4.jpg" style="width:100%">
+     <img src="image/5.jpg" style="width:100%">
+     <img src="image/6.jpg" style="width:100%">
+
+   </div>
+   <div class="columnins">
+     <img src="image/8.jpg" style="width:100%">
+     <img src="image/9.jpg" style="width:100%">
+     <img src="image/10.jpg" style="width:100%">
+     <img src="image/11.jpg" style="width:100%">
+
+       <img src="image/26.jpg" style="width:100%">
+
+   </div>
+   <div class="columnins">
+     <img src="image/15.jpg" style="width:100%">
+     <img src="image/16.jpg" style="width:100%">
+     <img src="image/17.jpg" style="width:100%">
+     <img src="image/18.jpg" style="width:100%">
+     <img src="image/19.jpg" style="width:100%">
+     <img src="image/20.jpg" style="width:100%">
+     <img src="image/21.jpg" style="width:100%">
+   </div>
+   <div class="columnins">
+     <img src="image/22.jpg" style="width:100%">
+     <img src="image/23.jpg" style="width:100%">
+     <img src="image/24.jpg" style="width:100%">
+     <img src="image/25.jpg" style="width:100%">
+     <img src="image/26.jpg" style="width:100%">
+     <img src="image/24.jpg" style="width:100%">
+     <img src="image/7.jpg" style="width:100%">
+     <img src="image/13.jpg" style="width:100%">
+         <img src="image/12.jpg" style="width:100%">
+
+   </div>
+ </div>
+
+
+</section> -->
+
+
+
+
+<div class="listings">
+
+<img id="oneth" class="widhei" src="image/CashAwards.png" alt="">
+<img id="twoth" class="widhei" src="image/Entries.png" alt="">
+<img id="threeth" class="widhei" src="image/Schools.png" alt="">
+
+
+</div>
+
+<section class="services">
+  <div class="max-width">
+    <h2 id="faqd" class="title">FAQs</h2>
+<h2 id="partici" class="faqh2">Participants</h2>
+<br>
+  <button class="accordion">How to register for an event?</button>
+<div class="panel">
+  <p> Fill in the registration form available on our website.</p>
+</div>
+
+<button class="accordion">Who is eligible?</button>
+<div class="panel">
+  <p>School students belonging to the age group of 8 to 14.</p>
+</div>
+
+<button class="accordion">What category do I belong to?</button>
+<div class="panel">
+  <p>Age groups 8 to 10 will come under the junior HAT category.
+   Age groups 11 to 14 will come under the senior HAT category.
+</p>
+</div>
+<button class="accordion">How do I get regular updates on the events?</button>
+<div class="panel">
+  <p>Get in touch with our social media handles
+.</p>
+</div>
+<button class="accordion">How to contact us? </button>
+<div class="panel">
+  <p>mailus: hat@steamtroops.com
+.</p>
+</div>
+
+<br>
+<br>
+
+<div class="">
+
+<h2 id="volun" class="faqh2">Volunteer</h2>
+<br>
+<button class="accordion">Will I be paid?</button>
+<div class="panel">
+<p> Yes, you will be paid on a commission basis, for further details log on to our home page.</p>
+</div>
+
+<button class="accordion">How to register?</button>
+<div class="panel">
+<p>            Fill in the registration form available on our website.</p>
+</div>
+
+<button class="accordion">How will I be benefited?</button>
+<div class="panel">
+<p>You will receive a certificate and in addition to that, a PPO will be extended based on your inputs.
+</p>
+</div>
+
+<button class="accordion">How to contact us? </button>
+<div class="panel">
+<p>mailus: hat@steamtroops.com
+.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="about" id="about">
+  <div class="max-width">
+    <h2 class="title" id="unique">Uniqueness of STIL</h2>
+    <div class="about-content">
+      <div class="column left">
+        <img id="imgun" src="image/STIL-Intro.png" alt="">
+      </div>
+    <div id="rp" class="  right">
+      <div class="text">
+        Why always stick on to <span>age old jobs ?</span>  <br>
+    Why not explore a job which best fits for your <span>children's skills ?</span> <br>
+    Why not let your children to choose their
+ <span>desired career ?</span>
+      </div>
+      <p>STIL acts as a viable tool to achieve all these at an early stage.</p>
+      <p>21st century skills being under emphasized in today's education system is the reason for lack of professional development.</p>
+      <p>Come, join us to beat the odds in the current education system .
+
+</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="social" id="social">
+
+<div class="social-container" >
+
+
+<!--
+<a href="#"><img class="insta" src="image/social-media-insta.png" alt=""></a>
+
+<a href="#"><img class="youtube" src="image/social-media-yt.png" alt=""></a>
+
+<a href="#"><img class="fb" src="image/social-media-fb.png" alt=""></a>
+
+<a href="#"><img class="tt" src="image/social-media-twitter.png" alt=""></a>
+
+<a href="#"><img class="pt" src="image/social-media-pt.png" alt=""></a> -->
+
+<ul class="icons">
+<a href="https://www.youtube.com/channel/UC_VeIS4POo35myUnlfVt0-w"> <i class="fa fa-youtube-play fa-2x icon-img"></i></a>
+  <a href="https://instagram.com/steamtroops?utm_medium=copy_link">  <i class="fa fa-instagram fa-2x icon-img"></i></a>
+  <a href="https://www.facebook.com/steamtroops/"> <i class="fa fa-facebook fa-2x icon-img"></i></a>
+
+</ul>
+
+
+<h6 class="footer"> &#169;2020 CopyRights at Steam Troops Innovation Lab Private Limited. All rights Reserved.
+   Design by STEAM Troops Innovation Labs <sup>TM</sup> </h6>
+
+
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+  <script src="script.js">
+
+
+  </script>
+  <script>
+
+
+$(window).on("load", function () {
+  $(".loader-container").fadeOut(3000);
+})
+
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+  var cpo = []; cpo["_object"] ="cincopa_d2933c"; cpo["_fid"] = "AgGAFxO5kDln";
+  var _cpmp = _cpmp || []; _cpmp.push(cpo);
+  (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+  cp.async = true; cp.src = "https://rtcdn.cincopa.com/libasync.js";
+  var c = document.getElementsByTagName("script")[0];
+
+</script>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidest");
+  var dots = document.getElementsByClassName("demoed");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+// <script type="text/javascript">
+// var cpo = []; cpo["_object"] ="cincopa_e47ee4"; cpo["_fid"] = "AgGAFxO5kDln";
+// var _cpmp = _cpmp || []; _cpmp.push(cpo);
+// (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+// cp.async = true; cp.src = "https://rtcdn.cincopa.com/libasync.js";
+// var c = document.getElementsByTagName("script")[0];
+// c.parentNode.insertBefore(cp, c); })();
+
+
+</body>
+
+</html>
